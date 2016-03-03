@@ -11,115 +11,138 @@ article, aside, canvas, details, embed,
 figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline; }
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
 
-.col-1 {
+
+$content-width: 800px;
+$border: 0px solid black;
+$padding-amt: 20px;
+$margin-amt: 0.5%;
+$base-font: 16px;
+
+// 12-column grid layout
+.col-1{
   display: inline-block;
   width: 7.416%;
-  margin: 0 0.5%;
+  margin: 0 $margin-amt;
   background-color: black;
-  font-size: 16px; }
+  font-size: $base-font;
+}
 
-.col-2 {
+.col-2{
   display: inline-block;
   width: 15.832%;
-  margin: 0 0.5%;
+  margin: 0 $margin-amt;
   background-color: black;
-  font-size: 16px; }
+  font-size: $base-font;
+}
 
-.col-3 {
+.col-3{
   display: inline-block;
   width: 24.25%;
-  margin: 0 0.5%;
+  margin: 0 $margin-amt;
   background-color: black;
-  font-size: 16px; }
+  font-size: $base-font;
+}
 
-.col-4 {
+.col-4{
   display: inline-block;
   width: 32.666%;
-  margin: 0 0.5%;
+  margin: 0 $margin-amt;
   background-color: black;
-  font-size: 16px; }
+  font-size: $base-font;
+}
 
-.col-5 {
+.col-5{
   display: inline-block;
   width: 41.082%;
-  margin: 0 0.5%;
+  margin: 0 $margin-amt;
   background-color: black;
-  font-size: 16px; }
+  font-size: $base-font;
+}
 
-.col-6 {
+.col-6{
   display: inline-block;
   width: 49.5%;
-  margin: 0 0.5%;
+  margin: 0 $margin-amt;
   background-color: black;
-  font-size: 16px; }
-
-.col-7 {
+  font-size: $base-font;
+}
+.col-7{
   display: inline-block;
   width: 57.916%;
-  margin: 0 0.5%;
+  margin: 0 $margin-amt;
   background-color: black;
-  font-size: 16px; }
+  font-size: $base-font;
+}
 
-.col-8 {
+.col-8{
   display: inline-block;
   width: 66.332%;
-  margin: 0 0.5%;
+  margin: 0 $margin-amt;
   background-color: black;
-  font-size: 16px; }
+  font-size: $base-font;
+}
 
-.col-9 {
+.col-9{
   display: inline-block;
   width: 74.75%;
-  margin: 0 0.5%;
+  margin: 0 $margin-amt;
   background-color: black;
-  font-size: 16px; }
-
-.col-10 {
+  font-size: $base-font;
+}
+.col-10{
   display: inline-block;
   width: 83.166%;
-  margin: 0 0.5%;
+  margin: 0 $margin-amt;
   background-color: black;
-  font-size: 16px; }
+  font-size: $base-font;
+}
 
-.col-11 {
+.col-11{
   display: inline-block;
   width: 91.582%;
-  margin: 0 0.5%;
+  margin: 0 $margin-amt;
   background-color: black;
-  font-size: 16px; }
+  font-size: $base-font;
+}
 
-.col-12 {
+.col-12{
   display: inline-block;
   width: 100%;
   margin: 0;
   background-color: black;
-  font-size: 16px; }
+  font-size: $base-font;
+}
 
-.first {
-  margin-left: 0; }
+.first{
+  margin-left: 0;
+}
 
-.last {
-  margin-right: 0; }
+.last{
+  margin-right: 0;
+}
 
 .row {
-  width: 800px;
+  width: $content-width;
   margin: 0 auto;
-  background-color: rgba(255, 0, 0, 0.4);
-  font-size: 0; }
+  background-color: rgba(255,0,0,0.4);
+  font-size: 0;
+}
 
-.container {
+.container{
   width: 100%;
-  padding: 0 20px;
-  text-align: center; }
+  padding: 0 $padding-amt;
+  text-align: center;
+}
 
 div {
-  display: inline-block; }
-
-/*# sourceMappingURL=dansGrid.css.map */
+  display: inline-block;
+  // height: 50px;
+}
